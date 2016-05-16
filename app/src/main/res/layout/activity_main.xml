@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cf2937"
+
+    tools:context="poojab26.nolibrary_page_indicators.MainActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/radiogroup">
+
+            <RadioButton
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:id="@+id/radioButton1"
+                android:button="@drawable/dot_indicators"
+                android:layout_marginRight="2dp"
+                android:clickable="false"
+                android:checked="true" />
+
+            <RadioButton
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:button="@drawable/dot_indicators"
+                android:clickable="false"
+                android:id="@+id/radioButton2"
+                android:layout_marginRight="2dp"
+
+                android:checked="false"/>
+
+            <RadioButton
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:clickable="false"
+                android:button="@drawable/dot_indicators"
+                android:layout_marginRight="2dp"
+
+                android:id="@+id/radioButton3"
+                android:checked="false"/>
+
+
+        </RadioGroup>
+
+    </FrameLayout>
+</RelativeLayout>
